@@ -1,4 +1,19 @@
-#include <SPI.h>
+/*
+  LoRaWAN IoT Network Implementation Project
+  Authors: Esmaeil Alkhazmi, Assem Aldarrat, Mohammed Abbas
+  University of Benghazi - Faculty of Engineering - Electrical and Electronic Engineering Department
+
+  This code is part of the Performance Analysis and Implementation of The LoRaWAN IoT Network project
+  conducted at the University of Benghazi. It implements a LoRa communication system with sender and
+  receiver functionality, displaying relevant information on an OLED screen.
+
+  Note: The arduino-LoRa Library (https://github.com/sandeepmistry/arduino-LoRa) was modified for this project.
+  In the "arduino-LoRa/src/LoRa.h" path, a private function "int getSpreadingFactor();" was moved to public classes.
+  This modification allows us to access and utilize the spreading factor information for our performance analysis.
+
+  Code last modified: [14-8-2023]
+
+*/#include <SPI.h>
 #include <LoRa.h>
 #include "board_def.h"
 #include <WiFi.h>
